@@ -1,0 +1,64 @@
+  <!-- Step 1 end -->
+
+  <!-- Step 2 start -->
+
+  You have the option of monthly or yearly billing.
+
+
+  
+
+  
+  
+
+  
+  
+
+  Monthly
+  Yearly
+
+  Go Back
+  Next Step
+
+  <!-- Step 2 end -->
+
+  <!-- Step 3 start -->
+
+
+
+
+  Larger storage
+  
+  +$2/mo
+
+  Customizable Profile
+  Custom theme on your profile
+  
+
+  Go Back
+  Next Step
+
+  <!-- Step 3 end -->
+
+  <!-- Step 4 start -->
+
+  
+  Double-check everything looks OK before confirming.
+
+  <!-- Dynamically add subscription and add-on selections here -->
+
+  Total (per month/year)
+
+  Go Back
+  Confirm
+
+  <!-- Step 4 end -->
+
+  <!-- Step 5 start -->
+
+  Thank you!
+
+
+
+  <!-- Step 5 end -->
+
+

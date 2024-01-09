@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> 
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Multi-step form</title>
+</head>
+<body>
+  <!-- overall section -->
+  <section class="parent">
+    <!-- sidebar -->
+    <section class="side-bar">
+      <!-- 1 -->
+      <div class="steps">
+        <span class="one side-bar-background span1">1</span>
+        <div class="baby">
+          <p class="number">Step 1</p>
+          <p class="point">Your info</p>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="steps">
+        <span class="two span2">2</span>
+        <div class="baby">
+          <p class="number">Step 2</p>
+          <p class="point">Select plan</p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="steps">
+        <span class="three span3">3</span>
+        <div class="baby">
+          <p class="number">Step 3</p>
+          <p class="point">Add-ons</p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="steps">
+        <span class="four span4">4</span>
+        <div class="baby">
+          <p class="number">Step 4</p>
+          <p class="point">Summary</p>
+        </div>
+      </div>
+    </section>
+
+
+   <!-- Step 1 start -->
+   <form class="steps-1 step1">
+      <h3>Personal info</h3>
+    <p class="text">Please provide your name, email address, and phone number.</p>
+
+    <label for="">Name
+      <p class="warningName"></p>
+    </label>
+    <input type="text" class="border" id="name" placeholder="e.g. Stephen King" >
+
+    <label for="">Email Address
+      <p class="warningEmail"></p>
+    </label>
+    <input type="text"  class="email" id="email" placeholder="e.g. stephenking@lorem.com">
+
+    <label for="">Phone Number
+      <p class="warningNum"></p>
+    </label>
+    <input type="text" class="num" id="number" placeholder="e.g. +1 234 567 890">
+
+
+
+    <button id="next1">Next Step</button>
+  </form>
+
+  <!-- step 2 start -->
+  <section id="steps" class="steps-2 step2">
+    <h3>Select your plan</h3>
+    <p class="text"> You have the option of monthly or yearly billing.</p>
+    <p class="warningplan red"></p>
+
+    <div class="plans-container monthlyplan flex">
+      
+      <div class="plans arcademonth">
+        <img src="assets/images/icon-arcade.svg" alt="Arcade" class="arcademonth">
+        <div class="plans-name arcademonth">
+          <p class="type arcademonth">Arcade</p>
+          <p class="amount arcademonth">$9/mo</p>
+        </div>
+      </div>
+
+      <div class="plans advancedmonth">
+        <img src="assets/images/icon-advanced.svg" alt="Advanced" class="advancedmonth">
+        <div class="plans-name advancedmonth">
+          <p class="type advancedmonth">Advanced</p>
+          <p class="amount advancedmonth">$12/mo</p>
+        </div>
+      </div>
+
+      <div class="plans">
+        <img src="assets/images/icon-pro.svg" alt="Pro">
+        <div class="plans-name">
+          <p class="type">Pro</p>
+          <p class="amount">$15/mo</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="plans-container yearlyplan">
+      
+      <div class="plans arcadeyear">
+        <img src="assets/images/icon-arcade.svg" alt="Arcade">
+        <div class="plans-name">
+          <p class="type">Arcade</p>
+          <p class="amount">$90/yr</p>
+          <p class="validity">2 months free</p>
+        </div>
+      </div>
+
+      <div class="plans advancedyear">
+        <img src="assets/images/icon-advanced.svg" alt="Arcade">
+        <div class="plans-name">
+          <p class="type">Advanced</p>
+          <p class="amount">$120/yr</p>
+          <p class="validity">2 months free</p>
+        </div>
+      </div>
+
+      <div class="plans">
+        <img src="assets/images/icon-pro.svg" alt="Arcade">
+        <div class="plans-name">
+          <p class="type">Pro</p>
+          <p class="amount">$150/yr</p>
+          <p class="validity">2 months free</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="toggle-parent">
+      <label for="">
+        <p class="monthly">Monthly</p>
+        <input type="checkbox" name="" id="">
+        <span class="slider"></span>
+        <p class="yearly">Yearly</p>
+      </label>
+    </div>
+
+    <div class="buttons">
+      <button id="back" onclick="goBack(2)"> Go back</button>
+      <button id="next2"> Next Step </button>
+    </div>
+  </section>
+
+  <!-- step 3 monthly -->
+  <section  id="steps" class="stepsMonthly-3 stepMonth3 step3" >
+    <h3>Pick add-ons</h3>
+    <p class="text">Add-ons help enhance your gaming experience.</p>
+
+    <!-- 1 -->
+    <div class="add-onParent">
+      <input type="checkbox" name="" id="" class="one">
+      <div class="addon-type">
+        <p class="name">Online service</p>
+        <p class="size">Access to multiplayer games</p>
+      </div>
+      <p class="price monthlyprice">+$1/mo</p>
+      <p class="price yearlyprice">+$10/yr</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="add-onParent">
+      <input type="checkbox" name="" id="" class="two">
+      <div class="addon-type">
+        <p class="name">Larger storage</p>
+        <p class="size">Extra 1TB of cloud save</p>
+      </div>
+      <p class="price monthlyprice">+$2/mo</p>
+      <p class="price yearlyprice">+$20/yr</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="add-onParent">
+      <input type="checkbox" name="" id="addonCheck" class="three">
+      <div class="addon-type">
+        <p class="name">Customizable Profile</p>
+        <p class="size">Custom theme on your profile</p>
+      </div>
+      <p class="price monthlyprice">+$2/mo</p>
+      <p class="price yearlyprice">+$20/yr</p>
+    </div>
+
+    <div class="buttons">
+      <button id="back" onclick="goBack(3), removePlanSelect()"> Go back</button>
+      <button id="next3"> Next Step </button>
+    </div>
+  </section>
+
+  <section id="steps" class="stepsMonthly-4 step4">
+    <h3>Finishing up</h3>
+    <p class="text">Double-check everything looks OK before confirming.</p>
+
+    <div class="step4-parent ">
+      <!-- 1 -->
+      <div class="choice">
+        <div class="plan-chosen">
+            <p class="planType">Arcade </p> <span class="plan"></span>
+            <!-- <p class="planType yearlyplan">Arcade (Yearly)</p> -->
+            <p class="change">Change</p>
+        </div>
+          <p class="plan-price">$9/mo</p>
+          <p class="plan-price yearlyplan">$90/yr</p>
+      </div>
+        <hr>
+        <div class="otherCharges">
+        </div>
+    </div>
+    <div class="total">
+      <p class="totalName">Total (per Month)</p>
+      <p class="totalPrice">+$12/mo</p>
+      <p class="totalPrice yearlyplan">+$120/yr</p>
+    </div>
+
+    <div class="buttons confirmBtn">
+      <button id="back" onclick="goBack(4)" onclick="backAddOn()"> Go back</button>
+      <button id="confirm"> Confirm </button>
+    </div>
+  </section>
+
+  <section  id=steps class="step5">
+    <img src="assets/images/icon-thank-you.svg" alt="ThankYou">
+    <h3>Thank you!</h3>
+    <p> Thanks for confirming your subscription! We hope you have fun 
+      using our platform. If you ever need support, please feel free 
+      to email us at support@loremgaming.com.</p>
+  </section>
+</section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
