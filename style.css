@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
 }
 
 body {
@@ -35,6 +37,10 @@ section.parent {
     display: flex;
     align-items: center;
     padding: 12px;
+}
+
+h3 {
+    font-weight: 700;
 }
 
 .steps span {
@@ -81,7 +87,7 @@ h3 {
     border: 1px solid hsl(231, 11%, 63%);
     border-radius: 5px;
     color: hsl(213, 96%, 18%);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .steps-1 input:focus {
@@ -99,7 +105,7 @@ input::placeholder {
     margin-bottom:6px;
     margin-top: 12px;
     color: hsl(213, 96%, 18%);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* .steps-1 label p{
@@ -156,7 +162,7 @@ input::placeholder {
 .type {
     color:hsl(213, 96%, 18%);
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 3px;
 }
 
@@ -355,7 +361,7 @@ div.buttons  {
 
 .planType {
     color: hsl(213, 96%, 18%);
-    font-weight: 600;
+    font-weight: 500;
     display: inline;
 }
 
@@ -372,7 +378,7 @@ div.buttons  {
 .chargesPrices {
     font-size: 14px;
     color:hsl(213, 96%, 18%);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .total {
@@ -386,7 +392,7 @@ div.buttons  {
 .totalPrice {
     color: hsl(243, 100%, 62%);
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .totalName {
@@ -429,7 +435,7 @@ div.confirmBtn {
 /* js classes */
 .red {
     color: red;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .block {
